@@ -1,0 +1,3 @@
+rootProject.name = "HealthyTimes"
+include ':app'
+include ':libraries:core'

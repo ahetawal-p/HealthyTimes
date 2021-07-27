@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed"
+    app:startDestination="@id/feedListFragment">
+
+    <fragment
+        android:id="@+id/feedListFragment"
+        android:name="com.capsule.healthytimes.features.feed.FeedListFragment"
+        android:label=""
+        tools:layout="@layout/feed_list_fragment">
+        <action
+            android:id="@+id/action_feed_to_articleDetail"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.capsule.healthytimes.features.details.ArticleDetailFragment"
+        android:label=""
+        tools:layout="@layout/article_detail_fragment">
+        <argument
+            android:name="article"
+            app:argType="com.capsule.healthytimes.core.domain.model.Article" />
+        <argument
+            android:name="source"
+            android:defaultValue="feed"
+            app:argType="string" />
+    </fragment>
+</navigation>

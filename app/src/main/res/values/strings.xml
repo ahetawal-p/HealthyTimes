@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HealthyTimes</string>
+    <string name="feed_tab">My Feed</string>
+    <string name="bookmarks_tab">Bookmarks</string>
+    <string name="cd_feed">Feed</string>
+    <string name="cd_bookmarks">Bookmarks</string>
+    <string name="share_title">Stay Healthy. Check this out !</string>
+    <string name="noBookmarks">No Bookmarks present !</string>
+    <string name="my_feed">My Health feed</string>
+    <string name="my_bookmarks">Reading List</string>
+    <string name="noFeed">No feed present</string>
+</resources>

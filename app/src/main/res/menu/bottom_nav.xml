@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/feed"
+        android:contentDescription="@string/cd_feed"
+        android:icon="@drawable/ic_feed"
+        android:title="@string/feed_tab" />
+    <item
+        android:id="@id/bookmarks"
+        android:contentDescription="@string/cd_bookmarks"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/bookmarks_tab" />
+</menu>
