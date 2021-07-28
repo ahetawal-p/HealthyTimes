@@ -39,7 +39,7 @@ Healthy Times uses Android Jetpack libraries for its functioning. Below are some
 - Kotlin Coroutines (Flow and Async) for async processing and data fetching
 - Retrofit for Networking
 - Material Components
-- [Clean Architecture](http://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) for overall code structure <br/> <br/>
+- [Clean Architecture](http://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) for overall code structure <br/>
 <img src="assets/clean_arch_1.png" alt="Sponsor Button" width="200"/>
 - Using Clean Architecture testing becomes very focussed for each layer ie. UI, Data and Domain.
 
