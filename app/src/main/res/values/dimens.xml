@@ -10,5 +10,6 @@
     <dimen name="XLarge">32dp</dimen>
     <dimen name="Xxlarge">48dp</dimen>
     <dimen name="Xxxlarge">96dp</dimen>
+    <dimen name="logo">84dp</dimen>
 
 </resources>

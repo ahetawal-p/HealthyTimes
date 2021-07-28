@@ -8,7 +8,7 @@ import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
-import okhttp3.logging.HttpLoggingInterceptor.Level.BODY
+import okhttp3.logging.HttpLoggingInterceptor.Level.BASIC
 import okhttp3.logging.HttpLoggingInterceptor.Level.NONE
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -44,7 +44,7 @@ class NetworkModule {
     fun provideOkHttp(): OkHttpClient {
         val okHttpClientBuilder = OkHttpClient.Builder()
         okHttpClientBuilder.addInterceptor(ApiKeyInterceptor())
-        val logLevel = if (BuildConfig.DEBUG) BODY else NONE
+        val logLevel = if (BuildConfig.DEBUG) BASIC else NONE
         okHttpClientBuilder.addInterceptor(HttpLoggingInterceptor().setLevel(logLevel))
 
         return okHttpClientBuilder.build()

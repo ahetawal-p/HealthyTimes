@@ -67,7 +67,6 @@ class ArticleDetailFragment : Fragment() {
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        println("Details : ${args.article}")
         val webView = binding.articleDetailWebview
         webView.settings.javaScriptEnabled = true
         webView.settings.builtInZoomControls = true

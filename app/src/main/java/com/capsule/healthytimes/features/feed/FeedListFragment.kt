@@ -46,7 +46,6 @@ class FeedListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        println("New data in fragment oncreate")
         viewModel.fetchData()
     }
 
@@ -61,7 +60,6 @@ class FeedListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        println("New data in fragment onViewCreated")
         val articleListAdapter = ArticleListAdapter(imageLoader)
         val loadingAdapter =
             SingleItemAdapter((ListItemLoadingBinding::inflate)) { binding, hasMore: Boolean ->
@@ -71,10 +69,6 @@ class FeedListFragment : Fragment() {
             val action =
                 FeedListFragmentDirections.actionFeedToArticleDetail(it)
             findNavController().navigate(action)
-        }
-
-        articleListAdapter.onClickFav = {
-            println("Fav $it")
         }
 
         binding.feedList.adapter = ConcatAdapter(articleListAdapter, loadingAdapter)
